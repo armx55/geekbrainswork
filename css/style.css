@@ -59,7 +59,7 @@
 
 
 body {
-  width: 1920px;
+  max-width: 1920px;
   margin: 0 auto;
   padding:0;
   font-size: 16px;
@@ -82,9 +82,10 @@ header {
 }
 
 .container {
-  width: 1230px;
+  max-width: 1230px;
   margin:0 auto;
 }
+
 
 .inner-block {
   padding:0 30px;
@@ -195,10 +196,6 @@ header {
   display: block;
   width: 100%;
   height: 100%;
-  /* background-image:url(../img/icon-search.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: transparent; */
 }
 
 .search-icon-form__label svg{
@@ -370,6 +367,7 @@ input[type="search"]:hover {
   justify-content: space-between;
   padding:0 32px;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .services-item {
@@ -835,6 +833,7 @@ aside h2 {
   display: flex;
   width: 970px;
   margin:0 auto;
+  flex-wrap: wrap;
 
 }
 .result-item {
@@ -1322,3 +1321,95 @@ aside h2 {
 
 /* footer end*/
 
+@media (max-width:1230px){
+	.container {
+    max-width: 970px;
+  }
+
+  header {
+    max-width: 100%;
+    height: 140px;
+  }
+
+  .navigation-list {
+    flex-direction: column;
+  }
+
+  .slider {
+    display: none;
+  }
+
+  .services-wrapper {
+    justify-content: space-between;
+  }
+  .services-item {
+    flex: 0 0 50%;
+    margin-bottom: 40px;
+  }
+
+  .results {
+    display: none;
+  }
+  .promo {
+    display: none;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .news-list {
+    justify-content: center;
+  }
+
+  .news-item {
+    margin: 0 0 25px;
+  }
+
+  .video-content {
+    display: none;
+  }
+
+  .realization {
+    display: none;
+  }
+
+  .partnairs-wrapper {
+    max-width: 100%;
+  }
+
+  .partnairs-wrapper img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .footer-top {
+    display: none;
+  }
+
+  .footer-bottom-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+  
+  @media (max-width:992px){
+    .container{
+      max-width: 750px;
+    }
+  }
+  @media (max-width:767px){
+    .container{
+      max-width: none;
+    }
+  }
+  
+  
+  @media (max-width:420px){
+    
+  }
+  
+  
